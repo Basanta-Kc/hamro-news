@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamro News</title>
+    <style>
+      :root {
+        --primary-main: #AAE3E2;
+        --primary-light: #FDEBED;
+      }
+
+      body {
+        background-color: var(--primary-light);
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h1 > span {
+        color: var(--primary-main);
+      }
+
+      .container {
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+      }
+
+      .col-1 {
+        width: 23%;
+      }
+
+      .col-2 {
+        width: 46%;
+      }
+
+      .col-3 {
+        width: 69%;
+      }
+
+      .col-4 {
+        width: 100%;
+      }
+
+      .bg-red {
+        background-color: var(--primary-main);
+        color: white;
+        padding: 1em;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+
+      @media(max-width: 700px){
+        .row {
+          flex-direction: column;
+        }
+
+       .col-1, .col-2, .col-3 {
+        width: 100%;
+       }
+
+       .bg-red {
+        font-size: 10px;
+       }
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hamro News's Ramro <span>News</span></h1>
+      <img src="images/annapuran.jpg" alt="" />
+
+      <div class="row">
+        <div class="col-1">
+          <h2>Lorem, ipsum.</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+            consectetur sapiente expedita ratione nesciunt qui unde nam officia
+            eos libero natus ex, assumenda necessitatibus porro omnis
+            repudiandae aspernatur amet praesentium voluptates laborum nemo
+            repellendus ea. Quae in impedit quo necessitatibus eius tenetur,
+            blanditiis, nesciunt ratione, velit veritatis laborum animi ab!
+          </p>
+        </div>
+        <div class="col-2">
+          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+          <img src="images/himal.jfif" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
+            modi reprehenderit soluta quasi eius nam deserunt illum sapiente
+            nobis illo voluptatum nisi voluptates, cupiditate ab! Praesentium
+            ducimus nesciunt excepturi veritatis?
+          </p>
+        </div>
+        <div class="col-1 bg-red">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
+            sed nulla alias perferendis illum porro sequi nesciunt reiciendis
+            possimus magni.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 bg-red">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquid
+          quaerat voluptas, perspiciatis quidem omnis nobis earum quas rerum
+          saepe?
+        </div>
+        <div class="col-3">
+          <h2>Lorem ipsum dolor sit, amet consectetur adipisicing.</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Dignissimos vero error eius quia. Reiciendis maxime natus nam.
+            Voluptas, ea perspiciatis.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <h2 class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+          <img src="images/temple.jpg" alt="" />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
+            doloremque, pariatur porro autem qui accusamus officiis dolore
+            architecto! Expedita vero corporis nisi accusantium in, rem neque
+            numquam saepe! Impedit nam quis vitae repellendus! Nisi quasi nulla
+            voluptatibus deleniti, voluptatem numquam!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            placeat sunt nostrum libero ad non assumenda fugit eos magnam vitae!
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 bg-red">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+            dolorem nam doloremque quo, asperiores esse culpa fuga maiores illum
+            ipsam aspernatur reprehenderit voluptatibus facere exercitationem
+            nobis vero accusamus, quas quis?
+          </p>
+        </div>
+        <div class="col-1">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            harum quas eos quibusdam, pariatur exercitationem autem? Dolor nemo
+            ex praesentium.
+          </p>
+        </div>
+      </div>
+
+      <footer>
+        <p class="text-center">All rights reserver 2023 &copy; Jamun Tech</p>
+      </footer>
+    </div>
+  </body>
+</html>
+
