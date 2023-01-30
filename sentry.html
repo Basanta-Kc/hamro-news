@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,300;1,700&family=Rubik:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Rubik";
+      }
+
+      html {
+        font-size: 10px;
+      }
+
+      body {
+        background-color: #f6f6f8;
+      }
+
+      header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 70%;
+        margin: 20px auto;
+        background-color: #f6f6f8;
+      }
+
+      .logo {
+        cursor: pointer;
+        margin-right: auto;
+      }
+
+      .logo > img {
+        height: 40px;
+      }
+
+      .nav-list a {
+        font-weight: 500;
+        font-size: 1.6rem;
+        color: #362d59;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .nav-list {
+        list-style: none;
+        display: flex;
+      }
+
+      .nav-list li {
+        padding: 0px 20px;
+      }
+
+      .btn {
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding: 0.8em 1em;
+        border-radius: 2em;
+        border: none;
+        color: white;
+        background-color: #e1567c;
+      }
+
+      .btn-text {
+        background: none;
+        color: #e1567c;
+      }
+
+      .btn-secondary {
+        background-color: rgba(121, 98, 140, 0.075);
+        color: #e1567c;
+      }
+
+      .container {
+        width: 70%;
+        margin: auto;
+      }
+
+      .header-box {
+        width: 60%;
+      }
+
+      .header-main {
+        color: white;
+        font-weight: 500;
+        font-size: 3rem;
+        padding: 1.4em 0;
+      }
+
+      .header-description {
+        font-size: 1.5em;
+        line-height: 1.6em;
+        margin-bottom: 1.5em;
+        color: white;
+        width: 70%;
+      }
+
+      #hero-section {
+        background-image: url("welcome-page-performance.jpg");
+        background-size: auto;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+        height: 100vh;
+        background-color: #f6f6f8;
+      }
+
+      .text-box-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .text-box-container > img {
+        height: 150px;
+        margin: 2em;
+      }
+
+      .text-box {
+        padding: 1.5em;
+        width: 50%;
+      }
+
+      .weekly-heading {
+        font-size: 3em;
+        font-weight: 400;
+        margin-bottom: 0.5em;
+      }
+
+      .weekly-description {
+        font-size: 1.6em;
+        line-height: 2em;
+      }
+
+      #weekly-drops {
+        background-color: #f6f6f8;
+      }
+
+      .card-box {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .card {
+        margin-bottom: 2em;
+        width: 49%;
+        border-radius: 10px;
+        background-color: white;
+      }
+
+      .card > img {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+      }
+
+      .card-content {
+        padding: 1.6em;
+      }
+
+      .card-title {
+        font-size: 1.9em;
+        margin-bottom: 1em;
+      }
+
+      .card-description {
+        font-size: 1.6em;
+        line-height: 1.5em;
+        margin-bottom: 1em;
+      }
+
+      .ml-1 {
+        margin-left: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="/"
+        ><img src="sentry-wordmark-dark-400x119.png" alt="logo"
+      /></a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#">PRICING</a></li>
+          <li><a href="#">DOCS</a></li>
+          <li><a href="#">RESOURCES</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">SIGN IN</a></li>
+        </ul>
+      </nav>
+      <button class="btn btn-contained">GET STARTED</button>
+    </header>
+
+    <section id="hero-section">
+      <div class="container">
+        <div class="header-box">
+          <h1 class="header-main">Working Code, Happy Customers</h1>
+          <p class="header-description">
+            Take action on broken lines of code, crashes, and busted API calls
+            with the only developer-first app monitoring platform built to give
+            you answers - not clues.
+          </p>
+          <p class="header-description">
+            Take action on broken lines of code, crashes, and busted API calls
+            with the only developer-first app monitoring platform built to give
+            you answers - not clues.
+          </p>
+          <button class="btn">TRY SENTRY FOR FREE</button>
+          <button class="btn btn-text">REQUEST A DEMO</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="weekly-drops">
+      <div class="container text-box-container">
+        <img src="speaker.png" alt="" />
+        <div class="text-box">
+          <h2 class="weekly-heading">Weekly drops from sentry</h2>
+          <p class="weekly-description">
+            Get tips on solving common latency outages, updates on events, and
+            join the conversation on our live streams with our DevRel team.
+          </p>
+        </div>
+      </div>
+      <div class="container card-box">
+        <div class="card">
+          <img src="mouse.jpeg" alt="" />
+          <div class="card-content">
+            <h2 class="card-title">Mobile: The Future Is Declarative</h2>
+            <p class="card-description">
+              The mobile development ecosystem has always been very diverse,
+              arguably more diverse than the web development ecosystem. While it
+              seems like every day there are more frameworks and tools for
+            </p>
+            <button class="btn btn-secondary">Learn More ></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="mouse.jpeg" alt="" />
+          <div class="card-content">
+            <h2 class="card-title">Mobile: The Future Is Declarative</h2>
+            <p class="card-description">
+              The mobile development ecosystem has always been very diverse,
+              arguably more diverse than the web development ecosystem. While it
+              seems like every day there are more frameworks and tools for
+            </p>
+            <button class="btn btn-secondary">Learn More ></button>
+          </div>
+        </div>
+      </div>
+      <div class="container card-box">
+        <div class="card">
+          <img src="mouse.jpeg" alt="" />
+          <div class="card-content">
+            <h2 class="card-title">Mobile: The Future Is Declarative</h2>
+            <p class="card-description">
+              The mobile development ecosystem has always been very diverse,
+              arguably more diverse than the web development ecosystem. While it
+              seems like every day there are more frameworks and tools for
+            </p>
+            <button class="btn btn-secondary">Learn More ></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="mouse.jpeg" alt="" />
+          <div class="card-content">
+            <h2 class="card-title">Mobile: The Future Is Declarative</h2>
+            <p class="card-description">
+              The mobile development ecosystem has always been very diverse,
+              arguably more diverse than the web development ecosystem. While it
+              seems like every day there are more frameworks and tools for
+            </p>
+            <button class="btn btn-secondary">Learn More ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
